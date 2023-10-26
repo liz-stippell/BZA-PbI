@@ -1,0 +1,31 @@
+#!/bin/bash
+#SBATCH --job-name=MD_03
+#SBATCH --account=prezhdo_176
+#SBATCH --partition=oneweek
+###SBATCH --partition=prezhdo
+#SBATCH --nodes=6
+#SBATCH --ntasks=96
+#SBATCH --cpus-per-task=1
+#SBATCH --time=7-00:00:00
+#SBATCH --output=out.log
+#SBATCH --error=out_%j.err
+#SBATCH --mem=0
+#SBATCH --mail-user=stippell@usc.edu
+#SBATCH --mail-type=ALL
+
+VASP_EXEC=/project/prezhdo_176/Shared/bin/vasp/endeavour/6.1.2/vasp_std
+
+cd $SLURM_SUBMIT_DIR
+#NP=`cat $SLURM_JOB_NODEFILE | wc -l`
+echo ${SLURM_NTASKS}
+
+module purge
+module load intel/19.0.4
+module load intel-mpi/2019.4.243
+module load intel-mkl/2019.5.281
+
+ln -sf /project/prezhdo_176/Shared/bin/vasp/vdw_kernel.bindat
+
+ulimit -s unlimited
+
+srun --mpi=pmi2 -n ${SLURM_NTASKS} $VASP_EXEC | tee out

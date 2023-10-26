@@ -1,0 +1,27 @@
+IBRION=0 # 0-turns on MD
+NBLOCK = 1 #steps when temp/energy is reset, every step needs to be reset for NVE                                       
+ENCUT= 400
+EDIFF = 1E-6
+ISMEAR= 0;
+SIGMA=0.1
+PREC=Normal
+
+ALGO = Fast
+LREAL=AUTO
+NELMIN=4
+NELM = 60
+NSW = 4000 # length of trajectory wanted, the longer the better 
+POTIM=1 # time step, 1fs
+ISYM=0
+
+SMASS=-3   ## NVE
+SMASS=-2
+TEBEG=300
+TEEND=300
+
+IVDW=11
+GGA= PE
+LWAVE= .FALSE.
+LCHARG= .FALSE.
+
+NPAR=8

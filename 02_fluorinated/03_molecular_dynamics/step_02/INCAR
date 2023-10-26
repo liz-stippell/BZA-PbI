@@ -1,0 +1,27 @@
+IBRION=0 # 0-turns on MD
+NBLOCK = 10 #steps when temp/energy is reset, need larger step for system to equlibrate                                      
+ENCUT= 400
+EDIFF = 1E-6
+ISMEAR= 0;
+SIGMA=0.1
+PREC=Normal
+
+ALGO = Normal
+LREAL=AUTO
+NELMIN=4
+NELM = 60
+NSW = 3000 # steps taken to equlibrate, 3ps good enough
+POTIM=1 # time step, 1fs
+ISYM=0
+
+SMASS=-1   ## NVT
+TEBEG=300
+TEEND=300
+
+IVDW=11
+GGA= PE
+LWAVE= .FALSE.
+LCHARG= .FALSE.
+
+NPAR=8
+ALGO=Fast

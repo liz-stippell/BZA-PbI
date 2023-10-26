@@ -1,0 +1,51 @@
+# INCAR for second guesses
+
+IBRION = -1           ! CG
+ISMEAR = -5           ! Gaussian smearing
+SIGMA = 0.05         ! width of smearing in eV
+#NELM = 2000
+NELMDL = -5
+NELMIN = 5
+ISIF = 2             ! internal coordinates relaxation
+#ISYM = 0             ! memory conserving symmetry calculation
+ISPIN = 1
+#NPAR = 6
+
+PREC = Accurate      ! medium precision
+EDIFF = 1e-6         ! electron relaxation criteria
+EDIFFG = -0.01        ! ion relaxation criteria
+NSW = 0             ! NSW sets the maximum number of ionic steps (unless the EDIFFG is reached)
+ENCUT=400
+
+LREAL = A
+#SMASS = -3
+#POTIM = 0.2
+ICHARG = 2           ! superposition of atomic charge densities as initial density
+ALGO = NORMAL
+#IALGO = 48
+#NBANDS=24
+
+LWAVE = .FALSE.            ! Save wave function
+LCHARG = .FALSE.           ! Save charge densities
+
+#LHFCALC  = .TRUE.
+#HFSCREEN = 0.2
+ 
+GGA = PE
+PARAM1 = 0.1234
+PARAM2 = 1.0000
+LUSE_VDW = .TRUE.
+AGGAC = 0.0000
+LASPH=.TRUE.
+IVDW = 11
+
+#GGA+U
+#LDAU = .TRUE.
+#LDAUTYPE = 2
+#LDAUL = -1 2 2 -1
+#LDAUU = 0 12 8 0
+#LDAUJ = 0 0 0 0
+#LDAUPRINT = 2
+#LMAXMIX = 4
+
+LORBIT=11  # writes the decomposed PROCAR
