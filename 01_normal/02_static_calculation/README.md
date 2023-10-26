@@ -7,4 +7,4 @@
 - <b> KPOINTS </b>
 - <b> SUB_VASP </b>
 
-The purpose of this step is to further compute the projected density of states (pDOS) for the desired system. This step utilizes the optimized geometry from the first step (geometry optimization)
+The purpose of this step is to further compute the projected density of states (pDOS) for the desired system. This step utilizes the optimized geometry from the first step (<a href="https://github.com/liz-stippell/BZA-PbI/tree/main/01_normal/01_geometry_optimization">Geometry Optimization</a>)
