@@ -3,6 +3,14 @@
 # The steps for this project, organized in chronological order as follows:
 
 ## 1. Geometry Optimization (VASP)
+#### Computed using the VASP software package
+#### Files:
+- <b> INCAR </b>
+- <b> POSCAR </b>
+- <b> POTCAR </b>
+- <b> KPOINTS </b>
+- <b> SUB_VASP </b>
+- <b> PbI6BZA.vasp </b>
 
 ## 2. Static Calculation (VASP)
 - For computing the projected density of states (pDOS) of the system.
