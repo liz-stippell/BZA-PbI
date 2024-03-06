@@ -14,6 +14,15 @@
 
 ## 2. Static Calculation (VASP)
 - For computing the projected density of states (pDOS) of the system.
+#### Computed using the VASP software package
+#### Files:
+- <b> INCAR </b>
+- <b> POSCAR </b>
+- <b> POTCAR </b>
+- <b> KPOINTS </b>
+- <b> SUB_VASP </b>
+
+This step utilizes the optimized geometry from the first step (Geometry Optimization)
 
 ## 3. Molecular Dynamics Simulation (VASP)
   1. <b> NVT: </b> Heat up the system to the desired temperature.
