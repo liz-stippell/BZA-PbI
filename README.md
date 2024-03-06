@@ -29,5 +29,13 @@ This step utilizes the optimized geometry from the first step (Geometry Optimiza
   2. <b> NVT: </b> Equilibrate the system at the desired temperature.
   3. <b> NVE: </b> Trajectory of the molecular dynamics simulation at the desired length.
 
+Each step has five files needed to run:
+- <b> INCAR: </b> The input file
+- <b> POSCAR: </b> The starting geometry
+    - This is taken from the CONTCAR of the geometry optimization step, renamed to POSCAR
+- <b> POTCAR: </b> Potential files
+- <b> KPOINTS: </b> K-Points mesh for system
+- <b> SUB_VASP: </b> Submit script for working with HPC
+
 ## 4. Single Point Calculations (OpenMX)
 - For computing the electronic coupling of the system.
