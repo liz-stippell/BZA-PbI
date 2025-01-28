@@ -1,0 +1,7 @@
+python pyband.py -occ "1-4 5-20 21-28 29-108 109-164" -k g-x-s-y-g-z-u-r-t-zx-uy-ts-r -z 0.5 -y -1.5 3.5 
+python pyband.py -occ "1-4 5-20 21-28 29-108 109-164" -k g-z-d-b-g-a-e-z-c-y-g -z 0.5 -y -1.5 3.5
+
+
+THIS ONE
+
+python pyband.py --occ "21-28 29-108 109-164" -k g-z-d-b-g-a-e-z-c-y-g -z 0.0 -y -1.5 3.75 
