@@ -1,4 +1,9 @@
 # BZA-PbI
+# The work presented in this repository was published [HERE](https://pubs.acs.org/doi/full/10.1021/acsami.4c17876).
+
+<i>Citation.</i>
+
+Stippell, E.; Li, W.; Quarti, C.; Beljonne, D.; Prezhdo, O. V. Enhancing Interlayer Charge Transport of Two-Dimensional Perovskites by Structural Stabilization via Fluorine Substitution. ACS Applied Materials & Interfaces 2025, 17 (1), 2032-2040. DOI: 10.1021/acsami.4c17876.
 
 # The steps for this project, organized in chronological order as follows:
 
