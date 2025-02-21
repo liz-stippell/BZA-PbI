@@ -11,7 +11,8 @@ Here, there are three different simulations ran (in order):
 Each step has five files needed to run:
 - <b> INCAR: </b> The input file
 - <b> POSCAR: </b> The starting geometry
-    - This is taken from the CONTCAR of the geometry optimization step, renamed to POSCAR
+    - This is taken from the CONTCAR of the geometry optimization step, renamed to POSCAR for the temperature ramp step
+    - The previous MD simulation's CONTCAR is used as the POSCAR for the next MD simulation
 - <b> POTCAR: </b> Potential files
 - <b> KPOINTS: </b> K-Points mesh for system
 - <b> SUB_VASP: </b> Submit script for working with HPC
